@@ -1,0 +1,195 @@
+/* Layout for desktop version */
+
+body {  }
+
+ul { list-style:none; }
+
+li { display:inline; }
+
+article > section.hot { display: -webkit-box; -webkit-box-align: center; box-align: center; }
+
+/*img#bg { outline: none; position: fixed; top: 0; left: 0; width: 100%; z-index: 1; }*/
+
+#content { z-index: 5; position: relative; background: rgba(0,0,0,0.2); }
+
+#background { left: 0px; min-height: 950px; overflow: hidden; position: fixed; top: 0px; width: 100%; z-index: -7; }
+
+#background .fader {bottom: -150px;height: 100%;left: 0px;position: absolute;width: 100%;z-index: -6;}
+
+.fader { background: transparent url('fader.png') repeat-x 0% 100%; }
+
+#background img {left: 0px;min-width: 1300px;position: absolute;top: 0px;width: 100%;z-index: -8;}
+
+/*********************/
+/*	     HEADER		 */
+/*********************/
+header .row { height:70px; }
+.header h1 { position:relative; text-transform:uppercase; margin:0; text-align: left; }
+
+.header h1 a { display:inline-block; border:none; margin:0 auto; }
+
+/* nav */
+nav { margin-left:805px; position: fixed; top:0px; z-index: 5; background: rgba(255,255,255,0.35); height: 45px; border-radius: 0 0 5px 5px; }
+
+nav ul { text-align:center; margin-top:0.5em;margin-bottom: 0; padding:0 10px;}
+
+nav ul li { margin-right:1em; font-size:18px; display:block; float:left; }
+
+nav ul li.last {margin-right:0;}
+
+
+/********************/
+/*       INTRO      */
+/********************/
+.opener { padding:2em 0; }
+
+.vis { min-height: 220px; }
+
+.blank { height:5px; }
+
+.opener p { font-family:'PT Sans Caption', sans-serif; margin: 0; font-size:36px; font-weight: 700; line-height: 36px; padding-bottom: 15px;}
+
+.opener p .awesome { font-size:1.2em; text-decoration: underline; color:#ff6666; }
+
+/* NAME TAG */
+.nametag {
+background: #E10000;
+border-radius: 20px;
+-moz-border-radius: 20px;
+width: 100%;
+text-align: center;
+font-size: 1em;
+-webkit-transform: rotate(-2.3deg);
+-moz-transform: rotate(-2.3deg);
+-o-transform: rotate(-2.3deg);
+padding: 5px 0;
+float: left;
+color:#fff;
+text-shadow: none;
+}
+
+.nametag h1 { letter-spacing: 0.2em; margin-bottom:0;}
+
+.nametag { text-align: center; font-size: 16px; margin:7px 15px 10px 0; }
+
+.nametag .name { background: white; color: #333; padding: 15px 0; display: block; }
+
+.nametag .name, .name h2 {font-family: 'Permanent Marker', serif;}
+
+.name .chetan { font-size: 30px; font-weight: 400px;margin: 0; }
+
+.name .rhyme {font-size: 18px;}
+
+/********************/
+/*       WORK       */
+/********************/
+.work img { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border: 3px solid #e9e9e9;}
+
+/********************/
+/*       TECH       */
+/********************/
+.tech { height:300px; }
+
+/********************/
+/*       ABOUT      */
+/********************/
+.about { height: 300px; }
+
+/********************/
+/*     CONTACT      */
+/********************/
+.contact { }
+
+.contact form { width:100%;  background: rgba(255, 255, 255, 0.4); }
+
+fieldset { padding: 30px; }
+
+label {
+	float: left; clear: left; margin: 11px 5% 0 0; width: 15%;
+	text-align: right;
+	text-transform: uppercase; font-weight: 700;
+}
+
+input {
+	width: 70%; height: 35px; padding: 5px 2% 0 5%; margin: 0 0 20px 0;
+	background: #5E768D;
+	background: -moz-linear-gradient(top, #546A7F 0%, #5E768D 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#546A7F), color-stop(20%,#5E768D)); /* webkit */
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;
+	font-family: sans-serif; font-size: 16px; color: #f2f2f2; text-transform: uppercase; text-shadow: 0px -1px 0px #334f71;
+}
+	input::-webkit-input-placeholder  {
+    	color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;
+	}
+	input:-moz-placeholder {
+	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;
+	}
+
+textarea {
+	width: 70%; max-width: 900px; height: 170px; padding: 12px 2% 0 5%; margin: 0 0 20px 0;
+	background: #5E768D;
+	background: -moz-linear-gradient(top, #546A7F 0%, #5E768D 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#546A7F), color-stop(20%,#5E768D)); /* webkit */
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;
+	font-family: sans-serif; font-size: 16px; color: #f2f2f2; text-shadow: 0px -1px 0px #334f71;
+}
+	textarea::-webkit-input-placeholder  {
+    	color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;
+	}
+	textarea:-moz-placeholder {
+	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;
+	}
+
+input:focus, textarea:focus {
+	background: #728eaa;
+	background: -moz-linear-gradient(top, #668099 0%, #728eaa 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#668099), color-stop(20%,#728eaa)); /* webkit */
+}
+
+input[type=submit] {
+	width: 185px; height: 52px; float: right; padding: 10px 15px; margin: 0 15px 0 0;
+	-moz-box-shadow: 0px 0px 5px #999;-webkit-box-shadow: 0px 0px 5px #999;
+	border: 1px solid #556f8c;
+	background: -moz-linear-gradient(top, #718DA9 0%, #415D79 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#718DA9), color-stop(100%,#415D79)); /* webkit */
+	cursor: pointer;
+}
+
+
+/*******************/
+/*	MEDIA QUERIES  */
+/*******************/
+
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+
+.nametag {display: none;}
+
+}
+
+/* Layout for mobile version */
+@media only screen and (max-width: 767px) {
+
+.examplecontainer {
+
+body {
+
+}
+
+.nametag { display: none; }
+}
+
+
+/* Provide higher res assets for iPhone 4 */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/* An example of how to override an image with one twice the size for iPhone 4. Specify the original pixel size with background-size.
+.download {
+background: url(../img/downarrow@2x.png) no-repeat;
+background-size: 27px 28px;
+}
+*/
+
+}
